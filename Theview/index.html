@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rofhiwa's To-Do App</title>
+    <script src="Todoapp.js"> </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            width: 500px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #003366;
+        }
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #new-todo {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        #add-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        #add-button:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Rofhiwa's To-Do App</div>
+
+        <!-- To-do list display -->
+        <ul id="todo-list"></ul>
+
+        <!-- Input and button for adding new to-dos -->
+        <input type="text" id="new-todo" placeholder="New activity" />
+        <button id="add-button" onclick="addTodo()">Add Activity</button>
+    </div>
+
+   
+</body>
+</html>
